@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Authorization code:</p>
+<pre id="code"></pre>
+<script>
+  const code = new URLSearchParams(location.search).get("code");
+  document.getElementById("code").textContent = code || "No code found in the URL.";
+</script>
+</body>
+</html>
